@@ -51,3 +51,6 @@ Adds:
 * Added attribution, in devdocs_example.rb
 * Add get_name method to the entries.rb filter, to get the name of a page
   from its first <h1>
+* Added another HTML page, in a subdirectory: intro/tutorial.html. Both
+  intro/tutorial and install show up as top-level pages under DevDocsExample.
+
