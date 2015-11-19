@@ -1,9 +1,9 @@
 module Docs
   class DevdocsExample < FileScraper
-    self.name = 'HelloWorld'
+    self.name = 'Devdocs Example'
     self.type = 'sphinx'
     self.version = '1.8.6'
-    self.dir = '/Users/maloneyc/work/devdocs/devdocs_example'
+    self.dir = '/Users/maloneyc/git/klortho/devdocs_example/src_html'
     self.base_url = 'https://www.example.com/'
     self.root_path = 'index.html'
     self.links = {
