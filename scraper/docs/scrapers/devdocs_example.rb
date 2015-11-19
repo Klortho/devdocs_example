@@ -1,8 +1,8 @@
 module Docs
   class DevdocsExample < FileScraper
-    self.name = 'Devdocs Example'
+    self.name = 'DevdocsExample'
     self.type = 'sphinx'
-    self.version = '1.8.6'
+    self.version = '0.0.1'
     self.dir = '/Users/maloneyc/git/klortho/devdocs_example/src_html'
     self.base_url = 'https://www.example.com/'
     self.root_path = 'index.html'
@@ -12,15 +12,8 @@ module Docs
     }
 
     html_filters.push 'devdocs_example/entries', 'devdocs_example/clean_html'
-    text_filters.push 'devdocs_example/fix_urls'
 
     options[:container] = '#main-content'
-
-    options[:skip] = %w(
-      skipped_file.html)
-
-    options[:skip_patterns] = [
-      /\Askipped_dir\//]
 
     options[:attribution] = <<-HTML
       Public domain.
