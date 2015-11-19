@@ -1,5 +1,5 @@
 module Docs
-  class HelloWorld
+  class DevdocsExample
     class EntriesFilter < Docs::EntriesFilter
       # Remove the "pilcrow" (paragraph mark)
       def get_name

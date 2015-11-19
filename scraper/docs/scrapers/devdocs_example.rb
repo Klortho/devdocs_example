@@ -1,18 +1,18 @@
 module Docs
-  class HelloWorld < FileScraper
+  class DevdocsExample < FileScraper
     self.name = 'HelloWorld'
     self.type = 'sphinx'
     self.version = '1.8.6'
-    self.dir = '/Users/maloneyc/work/devdocs/hello_world'
+    self.dir = '/Users/maloneyc/work/devdocs/devdocs_example'
     self.base_url = 'https://www.example.com/'
     self.root_path = 'index.html'
     self.links = {
       home: 'https://www.example.com/',
-      code: 'https://github.com/klortho/devdocs'
+      code: 'https://github.com/klortho/devdocs_example'
     }
 
-    html_filters.push 'hello_world/entries', 'hello_world/clean_html'
-    text_filters.push 'hello_world/fix_urls'
+    html_filters.push 'devdocs_example/entries', 'devdocs_example/clean_html'
+    text_filters.push 'devdocs_example/fix_urls'
 
     options[:container] = '#main-content'
 

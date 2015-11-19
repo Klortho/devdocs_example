@@ -1,5 +1,5 @@
 module Docs
-  class HelloWorld
+  class DevdocsExample
     class CleanHtmlFilter < Filter
       def call
         @doc = at_css('.content')
