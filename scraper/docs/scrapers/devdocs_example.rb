@@ -14,8 +14,7 @@ module Docs
       code: 'https://github.com/klortho/devdocs_example'
     }
 
-    # At a bare minimum, one entries filter is required
-    # Add the clean_html filter
+    # Filter stack
     html_filters.push 'devdocs_example/entries', 'devdocs_example/clean_html'
 
     # The outer-most container for content in all HTML files. Everything outside
