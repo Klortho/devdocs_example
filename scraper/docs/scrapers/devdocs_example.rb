@@ -7,6 +7,7 @@ module Docs
     self.base_url = 'https://www.example.com/'
     self.root_path = 'index.html'
 
+    # At a bare minimum, one entries filter is required
     html_filters.push 'devdocs_example/entries'
   end
 end
