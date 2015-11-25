@@ -88,6 +88,8 @@ Bare minimum.
 
 ## basic
 
+[Here](https://github.com/Klortho/devdocs_example/tree/basic).
+
 Adds:
 
 * Links for home page and source code (in devdocs_example.rb)
@@ -104,6 +106,8 @@ Adds:
 
 
 ## types
+
+[Here](https://github.com/Klortho/devdocs_example/tree/types).
 
 * Created a type, "Intro pages", in the entries.rb get_type method. All pages in
   the intro subdirectory will be of this type.
