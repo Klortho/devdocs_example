@@ -39,9 +39,50 @@ Then you should see the "Devdocs Example" documentation in your browser at
 [http://localhost:9292/]() (under "DISABLED").
 
 
+# This repo
+
+This repo is an "overlay" that integrates with the devdocs repository.
+This repo's files fit in as follows:
+
+```
+devdocs repo                                  devdocs_example
+├── ...                                       ├── ...
+├── lib/                                      ├── scraper
+│   ├── docs/                                 │   └── docs
+│   │   ├── core/                             │       │
+│   │   ├── filters/                          │       ├── filters
+│   │   │   ├── ...                           │       │   │
+│   │   │   ├── devdocs_example/              │       │   └── devdocs_example/
+│   │   │   │   ├── clean_html.rb →           │       │       ├── clean_html.rb
+│   │   │   │   ├── entries.rb →              │       │       ├── entries.rb
+│   │   │   │   └── fix_urls.rb →             │       │       └── fix_urls.rb
+│   │   │   └── ...                           │       │
+│   │   ├── scrapers/                         │       └── scrapers
+│   │   │   ├── ...                           │           │
+│   │   │   ├── devdocs_example.rb →          │           └── devdocs_example.rb
+│   │   │   │   (contains abs path to         │
+│   │   │   │   devdocs_example's src_html)   └── src_html
+│   │   │   └── ...                               └── ...
+│   │   └── ...
+│   └── ...
+└── ...
+```
+
+
+
+
 # Branches
 
+In figuring out how devdocs scrapers work, I started with a bare minimum
+scraper and set of HTML pages, and gradually added features, using the 
+Django docset as my target. For each major step I finished, I created a git
+branch. The following sections describe those branches, and the features
+they include.
+
+
 ## hello_world
+
+[Here](https://github.com/Klortho/devdocs_example/tree/hello_world).
 
 Bare minimum.
 
