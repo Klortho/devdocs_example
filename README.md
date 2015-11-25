@@ -53,15 +53,15 @@ devdocs repo                                  devdocs_example
 │   │   ├── filters/                          │       ├── filters
 │   │   │   ├── ...                           │       │   │
 │   │   │   ├── devdocs_example/              │       │   └── devdocs_example/
-│   │   │   │   ├── clean_html.rb →           │       │       ├── clean_html.rb
-│   │   │   │   ├── entries.rb →              │       │       ├── entries.rb
-│   │   │   │   └── fix_urls.rb →             │       │       └── fix_urls.rb
+│   │   │   │   ├── clean_html.rb ......... → │       │       ├── clean_html.rb
+│   │   │   │   ├── entries.rb ............ → │       │       ├── entries.rb
+│   │   │   │   └── fix_urls.rb ........... → │       │       └── fix_urls.rb
 │   │   │   └── ...                           │       │
 │   │   ├── scrapers/                         │       └── scrapers
 │   │   │   ├── ...                           │           │
-│   │   │   ├── devdocs_example.rb →          │           └── devdocs_example.rb
+│   │   │   ├── devdocs_example.rb ........ → │           └── devdocs_example.rb
 │   │   │   │   (contains abs path to         │
-│   │   │   │   devdocs_example's src_html)   └── src_html
+│   │   │   │   devdocs_example's src_html) → └── src_html
 │   │   │   └── ...                               └── ...
 │   │   └── ...
 │   └── ...
